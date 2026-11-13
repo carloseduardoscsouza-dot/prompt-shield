@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-shield"
+version = "1.0.0"
+description = "Lightweight AI Security & LLM Prompt Linter. Detects prompt injections, secret leaks, and PII."
+readme = "README.md"
+authors = [{ name = "Carlos", email = "author@example.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+prompt-shield = "prompt_shield.cli:main"
+pshield = "prompt_shield.cli:main"
